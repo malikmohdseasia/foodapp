@@ -13,8 +13,8 @@ const Footer = () => {
 
   return (
     <div className="mt-7.75 mx-auto bg-[#F1C74E40] border-t">
-      <div className="flex items-center justify-between border pl-20 pr-29.5">
-        <div className="border">
+      <div className="flex  justify-between  pt-34.75 pl-20 pr-29.5">
+        <div className="">
           <img src={IMGLOGO} alt="" className="w-44.75 h-10 object-contain" />
           <p className="font-inter font-medium mt-12.25">Accepted payment</p>
           <div className="mt-4 flex gap-6">
@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border">
+        <div className="">
           <h1 className="font-inter text-[32px] font-medium">Contact</h1>
           <div className="flex gap-6.5 mt-4">
             {items2.map((item, index) => (
@@ -37,13 +37,13 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center gap-4 border">
+        <div className="flex flex-col items-center gap-4 ">
           <h1 className="font-inter font-medium text-[32px]">Support</h1>
           <h2 className="font-inter">FAQ</h2>
           <h2 className="font-inter">Contact</h2>
         </div>
 
-        <div className="border">
+        <div className="">
           <h1 className="font-inter text-[32px] font-medium">Location</h1>
           <h2 className="font-inter mt-4">
             25°11'46.7"N 55°16'35.6"E <br /> (Burj Khalifa, Dubai)
