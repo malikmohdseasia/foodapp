@@ -33,20 +33,20 @@ const Order = () => {
   return (
     <div className="w-container mx-auto">
       <div className="my-25">
-        <h1 className="font-inter font-semibold text-[40px] text-center">
+        <h1 className="font-inter font-semibold text-lg md:text-[40px] text-center">
           How You Can order
         </h1>
         <hr className="border-2 border-mainColor w-38 mx-auto" />
       </div>
 
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {items.map((item, index) => (
           <div className="border border-[#C6C6C6] justify-items-center rounded-lg" key={index}>
             <img src={item.img} alt="" className="" />
 
             <div className="p-5 text-center">
 
-            <h1 className="font-inter text-[32px] pt-6 font-medium">{item.title}</h1>
+            <h1 className="font-inter text-lg md:text-[32px] pt-6 font-medium">{item.title}</h1>
             <p className="font-inter font-normal ">{item.details}</p>
             </div>
           </div>

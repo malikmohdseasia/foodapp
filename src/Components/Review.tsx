@@ -26,26 +26,26 @@ const Review = () => {
   return (
     <div className="w-container mx-auto">
       <div>
-        <h1 className="font-inter font-semibold text-[40px] text-center mt-37">
+        <h1 className="font-inter font-semibold text-lg md:text-[40px] text-center mt-37">
           Review Form Our Customers Say
         </h1>
         <hr className="border-2 border-mainColor w-38 mx-auto" />
       </div>
 
-      <div className="mt-26.75 flex gap-14">
+      <div className="mt-26.75 flex flex-col md:flex-row gap-14">
         {items.map((item, index)=>(
-            <div key={index} className="p-6 rounded-lg border border-[#C6C6C6]">
-                <div className="flex gap-6.5 items-center">
+            <div key={index} className="p-6 rounded-lg border border-[#C6C6C6] flex flex-col justify-between">
+                <div className="flex flex-col md:flex-row gap-1 md:gap-6.5 items-center">
 
                 <img src={item.img} alt="" className="w-15 h-15 object-cover rounded-full" />
-                <h1 className="font-inter font-medium text-[24px]">{item.title}</h1>
+                <h1 className="font-inter font-medium  text-lg md:text-[24px]">{item.title}</h1>
                 </div>
 
-                <div className="mt-6.75">
-                    <p className="font-inter">{item.review}</p>
+                <div className="mt-1 md:mt-6.75">
+                    <p className="font-inter text-center md:text-start">{item.review}</p>
                 </div>
 
-                <div className="mt-4.5 flex gap-2 items-center ">
+                <div className="mt-4.5 flex flex-col md:flex-row gap-2 items-center ">
                     {item.rating}
                     <p>{item.totalStar}</p>
                 </div>
@@ -55,7 +55,7 @@ const Review = () => {
       </div>
 
 
-      <div className="flex gap-6.5 items-center mt-8.25 w-container">
+      <div className="flex gap-6.5 items-center mt-8.25 w-container justify-center md:justify-start">
         <p className="font-inter">Add A review</p>
         {addReview}
       </div>
